@@ -1,0 +1,712 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5CDB351926CD2CC600D3EF90 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB351826CD2CC600D3EF90 /* AppDelegate.swift */; };
+		5CDB351D26CD2CC600D3EF90 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB351C26CD2CC600D3EF90 /* ViewController.swift */; };
+		5CDB352026CD2CC600D3EF90 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB351E26CD2CC600D3EF90 /* Main.storyboard */; };
+		5CDB352226CD2CC800D3EF90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB352126CD2CC800D3EF90 /* Assets.xcassets */; };
+		5CDB352526CD2CC800D3EF90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CDB352326CD2CC800D3EF90 /* LaunchScreen.storyboard */; };
+		5CDB353026CD2CC900D3EF90 /* OctocatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB352F26CD2CC900D3EF90 /* OctocatTests.swift */; };
+		5CDB353B26CD2CC900D3EF90 /* OctocatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB353A26CD2CC900D3EF90 /* OctocatUITests.swift */; };
+		5CDB355026CD2DDF00D3EF90 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 5CDB354F26CD2DDF00D3EF90 /* Alamofire */; };
+		5CDB355626CD2EDD00D3EF90 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5CDB355526CD2EDD00D3EF90 /* PromiseKit */; };
+		5CDB356B26CD53AB00D3EF90 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB356A26CD53AB00D3EF90 /* SceneDelegate.swift */; };
+		5CDB357826CD8E7E00D3EF90 /* GithubServiceClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB357726CD8E7E00D3EF90 /* GithubServiceClient.swift */; };
+		5CDB357D26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB357C26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift */; };
+		5CDB358226CD8FE000D3EF90 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB358126CD8FE000D3EF90 /* Repo.swift */; };
+		5CDB358726CD97E300D3EF90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB358626CD97E300D3EF90 /* User.swift */; };
+		5CDB358C26CD9D6B00D3EF90 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB358B26CD9D6B00D3EF90 /* Event.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5CDB352C26CD2CC900D3EF90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CDB350D26CD2CC600D3EF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CDB351426CD2CC600D3EF90;
+			remoteInfo = Octocat;
+		};
+		5CDB353726CD2CC900D3EF90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5CDB350D26CD2CC600D3EF90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5CDB351426CD2CC600D3EF90;
+			remoteInfo = Octocat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5CDB351526CD2CC600D3EF90 /* Octocat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Octocat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDB351826CD2CC600D3EF90 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5CDB351C26CD2CC600D3EF90 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5CDB351F26CD2CC600D3EF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5CDB352126CD2CC800D3EF90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5CDB352426CD2CC800D3EF90 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5CDB352626CD2CC800D3EF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDB352B26CD2CC900D3EF90 /* OctocatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctocatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDB352F26CD2CC900D3EF90 /* OctocatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctocatTests.swift; sourceTree = "<group>"; };
+		5CDB353126CD2CC900D3EF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDB353626CD2CC900D3EF90 /* OctocatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OctocatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CDB353A26CD2CC900D3EF90 /* OctocatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OctocatUITests.swift; sourceTree = "<group>"; };
+		5CDB353C26CD2CC900D3EF90 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CDB356A26CD53AB00D3EF90 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		5CDB357726CD8E7E00D3EF90 /* GithubServiceClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubServiceClient.swift; sourceTree = "<group>"; };
+		5CDB357C26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GithubServiceClientProtocol.swift; sourceTree = "<group>"; };
+		5CDB358126CD8FE000D3EF90 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
+		5CDB358626CD97E300D3EF90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		5CDB358B26CD9D6B00D3EF90 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5CDB351226CD2CC600D3EF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB355026CD2DDF00D3EF90 /* Alamofire in Frameworks */,
+				5CDB355626CD2EDD00D3EF90 /* PromiseKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB352826CD2CC900D3EF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB353326CD2CC900D3EF90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5CDB350C26CD2CC600D3EF90 = {
+			isa = PBXGroup;
+			children = (
+				5CDB351726CD2CC600D3EF90 /* Octocat */,
+				5CDB352E26CD2CC900D3EF90 /* OctocatTests */,
+				5CDB353926CD2CC900D3EF90 /* OctocatUITests */,
+				5CDB351626CD2CC600D3EF90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5CDB351626CD2CC600D3EF90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB351526CD2CC600D3EF90 /* Octocat.app */,
+				5CDB352B26CD2CC900D3EF90 /* OctocatTests.xctest */,
+				5CDB353626CD2CC900D3EF90 /* OctocatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5CDB351726CD2CC600D3EF90 /* Octocat */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB357226CD8AE300D3EF90 /* Modules */,
+				5CDB356F26CD8AA300D3EF90 /* Data */,
+				5CDB356A26CD53AB00D3EF90 /* SceneDelegate.swift */,
+				5CDB351826CD2CC600D3EF90 /* AppDelegate.swift */,
+				5CDB351C26CD2CC600D3EF90 /* ViewController.swift */,
+				5CDB351E26CD2CC600D3EF90 /* Main.storyboard */,
+				5CDB352126CD2CC800D3EF90 /* Assets.xcassets */,
+				5CDB352326CD2CC800D3EF90 /* LaunchScreen.storyboard */,
+				5CDB352626CD2CC800D3EF90 /* Info.plist */,
+			);
+			path = Octocat;
+			sourceTree = "<group>";
+		};
+		5CDB352E26CD2CC900D3EF90 /* OctocatTests */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB352F26CD2CC900D3EF90 /* OctocatTests.swift */,
+				5CDB353126CD2CC900D3EF90 /* Info.plist */,
+			);
+			path = OctocatTests;
+			sourceTree = "<group>";
+		};
+		5CDB353926CD2CC900D3EF90 /* OctocatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB353A26CD2CC900D3EF90 /* OctocatUITests.swift */,
+				5CDB353C26CD2CC900D3EF90 /* Info.plist */,
+			);
+			path = OctocatUITests;
+			sourceTree = "<group>";
+		};
+		5CDB356F26CD8AA300D3EF90 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB357126CD8AD000D3EF90 /* Models */,
+				5CDB357026CD8AC800D3EF90 /* Clients */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		5CDB357026CD8AC800D3EF90 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB357726CD8E7E00D3EF90 /* GithubServiceClient.swift */,
+				5CDB357C26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
+		5CDB357126CD8AD000D3EF90 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB358126CD8FE000D3EF90 /* Repo.swift */,
+				5CDB358626CD97E300D3EF90 /* User.swift */,
+				5CDB358B26CD9D6B00D3EF90 /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5CDB357226CD8AE300D3EF90 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB357426CD8B9E00D3EF90 /* Repo */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5CDB357426CD8B9E00D3EF90 /* Repo */ = {
+			isa = PBXGroup;
+			children = (
+				5CDB357626CD8D5200D3EF90 /* Detail */,
+				5CDB357526CD8D4800D3EF90 /* List */,
+			);
+			path = Repo;
+			sourceTree = "<group>";
+		};
+		5CDB357526CD8D4800D3EF90 /* List */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		5CDB357626CD8D5200D3EF90 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5CDB351426CD2CC600D3EF90 /* Octocat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDB353F26CD2CC900D3EF90 /* Build configuration list for PBXNativeTarget "Octocat" */;
+			buildPhases = (
+				5CDB351126CD2CC600D3EF90 /* Sources */,
+				5CDB351226CD2CC600D3EF90 /* Frameworks */,
+				5CDB351326CD2CC600D3EF90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Octocat;
+			packageProductDependencies = (
+				5CDB354F26CD2DDF00D3EF90 /* Alamofire */,
+				5CDB355526CD2EDD00D3EF90 /* PromiseKit */,
+			);
+			productName = Octocat;
+			productReference = 5CDB351526CD2CC600D3EF90 /* Octocat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5CDB352A26CD2CC900D3EF90 /* OctocatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDB354226CD2CC900D3EF90 /* Build configuration list for PBXNativeTarget "OctocatTests" */;
+			buildPhases = (
+				5CDB352726CD2CC900D3EF90 /* Sources */,
+				5CDB352826CD2CC900D3EF90 /* Frameworks */,
+				5CDB352926CD2CC900D3EF90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CDB352D26CD2CC900D3EF90 /* PBXTargetDependency */,
+			);
+			name = OctocatTests;
+			productName = OctocatTests;
+			productReference = 5CDB352B26CD2CC900D3EF90 /* OctocatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5CDB353526CD2CC900D3EF90 /* OctocatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5CDB354526CD2CC900D3EF90 /* Build configuration list for PBXNativeTarget "OctocatUITests" */;
+			buildPhases = (
+				5CDB353226CD2CC900D3EF90 /* Sources */,
+				5CDB353326CD2CC900D3EF90 /* Frameworks */,
+				5CDB353426CD2CC900D3EF90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5CDB353826CD2CC900D3EF90 /* PBXTargetDependency */,
+			);
+			name = OctocatUITests;
+			productName = OctocatUITests;
+			productReference = 5CDB353626CD2CC900D3EF90 /* OctocatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5CDB350D26CD2CC600D3EF90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					5CDB351426CD2CC600D3EF90 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					5CDB352A26CD2CC900D3EF90 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5CDB351426CD2CC600D3EF90;
+					};
+					5CDB353526CD2CC900D3EF90 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 5CDB351426CD2CC600D3EF90;
+					};
+				};
+			};
+			buildConfigurationList = 5CDB351026CD2CC600D3EF90 /* Build configuration list for PBXProject "Octocat" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5CDB350C26CD2CC600D3EF90;
+			packageReferences = (
+				5CDB354E26CD2DDF00D3EF90 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				5CDB355426CD2EDD00D3EF90 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+			);
+			productRefGroup = 5CDB351626CD2CC600D3EF90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5CDB351426CD2CC600D3EF90 /* Octocat */,
+				5CDB352A26CD2CC900D3EF90 /* OctocatTests */,
+				5CDB353526CD2CC900D3EF90 /* OctocatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5CDB351326CD2CC600D3EF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB352526CD2CC800D3EF90 /* LaunchScreen.storyboard in Resources */,
+				5CDB352226CD2CC800D3EF90 /* Assets.xcassets in Resources */,
+				5CDB352026CD2CC600D3EF90 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB352926CD2CC900D3EF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB353426CD2CC900D3EF90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5CDB351126CD2CC600D3EF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB358C26CD9D6B00D3EF90 /* Event.swift in Sources */,
+				5CDB351D26CD2CC600D3EF90 /* ViewController.swift in Sources */,
+				5CDB351926CD2CC600D3EF90 /* AppDelegate.swift in Sources */,
+				5CDB357D26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift in Sources */,
+				5CDB358226CD8FE000D3EF90 /* Repo.swift in Sources */,
+				5CDB356B26CD53AB00D3EF90 /* SceneDelegate.swift in Sources */,
+				5CDB357826CD8E7E00D3EF90 /* GithubServiceClient.swift in Sources */,
+				5CDB358726CD97E300D3EF90 /* User.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB352726CD2CC900D3EF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB353026CD2CC900D3EF90 /* OctocatTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5CDB353226CD2CC900D3EF90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CDB353B26CD2CC900D3EF90 /* OctocatUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5CDB352D26CD2CC900D3EF90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CDB351426CD2CC600D3EF90 /* Octocat */;
+			targetProxy = 5CDB352C26CD2CC900D3EF90 /* PBXContainerItemProxy */;
+		};
+		5CDB353826CD2CC900D3EF90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5CDB351426CD2CC600D3EF90 /* Octocat */;
+			targetProxy = 5CDB353726CD2CC900D3EF90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5CDB351E26CD2CC600D3EF90 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDB351F26CD2CC600D3EF90 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5CDB352326CD2CC800D3EF90 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5CDB352426CD2CC800D3EF90 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5CDB353D26CD2CC900D3EF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5CDB353E26CD2CC900D3EF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5CDB354026CD2CC900D3EF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Octocat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5CDB354126CD2CC900D3EF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Octocat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		5CDB354326CD2CC900D3EF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OctocatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat.OctocatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octocat.app/Octocat";
+			};
+			name = Debug;
+		};
+		5CDB354426CD2CC900D3EF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OctocatTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat.OctocatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Octocat.app/Octocat";
+			};
+			name = Release;
+		};
+		5CDB354626CD2CC900D3EF90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OctocatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat.OctocatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Octocat;
+			};
+			name = Debug;
+		};
+		5CDB354726CD2CC900D3EF90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = OctocatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat.OctocatUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Octocat;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5CDB351026CD2CC600D3EF90 /* Build configuration list for PBXProject "Octocat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB353D26CD2CC900D3EF90 /* Debug */,
+				5CDB353E26CD2CC900D3EF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDB353F26CD2CC900D3EF90 /* Build configuration list for PBXNativeTarget "Octocat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB354026CD2CC900D3EF90 /* Debug */,
+				5CDB354126CD2CC900D3EF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDB354226CD2CC900D3EF90 /* Build configuration list for PBXNativeTarget "OctocatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB354326CD2CC900D3EF90 /* Debug */,
+				5CDB354426CD2CC900D3EF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5CDB354526CD2CC900D3EF90 /* Build configuration list for PBXNativeTarget "OctocatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CDB354626CD2CC900D3EF90 /* Debug */,
+				5CDB354726CD2CC900D3EF90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		5CDB354E26CD2DDF00D3EF90 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = exactVersion;
+				version = 5.4.3;
+			};
+		};
+		5CDB355426CD2EDD00D3EF90 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit";
+			requirement = {
+				kind = exactVersion;
+				version = 6.15.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		5CDB354F26CD2DDF00D3EF90 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CDB354E26CD2DDF00D3EF90 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		5CDB355526CD2EDD00D3EF90 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 5CDB355426CD2EDD00D3EF90 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 5CDB350D26CD2CC600D3EF90 /* Project object */;
+}
