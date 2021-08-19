@@ -22,6 +22,11 @@
 		5CDB358226CD8FE000D3EF90 /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB358126CD8FE000D3EF90 /* Repo.swift */; };
 		5CDB358726CD97E300D3EF90 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB358626CD97E300D3EF90 /* User.swift */; };
 		5CDB358C26CD9D6B00D3EF90 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB358B26CD9D6B00D3EF90 /* Event.swift */; };
+		5CDB359726CEE1E500D3EF90 /* RepoListWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB359626CEE1E500D3EF90 /* RepoListWireframe.swift */; };
+		5CDB359C26CEE1FB00D3EF90 /* RepoListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB359B26CEE1FB00D3EF90 /* RepoListProtocols.swift */; };
+		5CDB35A126CEE20F00D3EF90 /* RepoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35A026CEE20F00D3EF90 /* RepoListPresenter.swift */; };
+		5CDB35A626CEE21D00D3EF90 /* RepoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35A526CEE21D00D3EF90 /* RepoListInteractor.swift */; };
+		5CDB35AB26CEE23400D3EF90 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +66,11 @@
 		5CDB358126CD8FE000D3EF90 /* Repo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repo.swift; sourceTree = "<group>"; };
 		5CDB358626CD97E300D3EF90 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		5CDB358B26CD9D6B00D3EF90 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		5CDB359626CEE1E500D3EF90 /* RepoListWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListWireframe.swift; sourceTree = "<group>"; };
+		5CDB359B26CEE1FB00D3EF90 /* RepoListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListProtocols.swift; sourceTree = "<group>"; };
+		5CDB35A026CEE20F00D3EF90 /* RepoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListPresenter.swift; sourceTree = "<group>"; };
+		5CDB35A526CEE21D00D3EF90 /* RepoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListInteractor.swift; sourceTree = "<group>"; };
+		5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +202,11 @@
 		5CDB357526CD8D4800D3EF90 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				5CDB359626CEE1E500D3EF90 /* RepoListWireframe.swift */,
+				5CDB359B26CEE1FB00D3EF90 /* RepoListProtocols.swift */,
+				5CDB35A026CEE20F00D3EF90 /* RepoListPresenter.swift */,
+				5CDB35A526CEE21D00D3EF90 /* RepoListInteractor.swift */,
+				5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -341,14 +356,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CDB35A626CEE21D00D3EF90 /* RepoListInteractor.swift in Sources */,
 				5CDB358C26CD9D6B00D3EF90 /* Event.swift in Sources */,
 				5CDB351D26CD2CC600D3EF90 /* ViewController.swift in Sources */,
+				5CDB35A126CEE20F00D3EF90 /* RepoListPresenter.swift in Sources */,
+				5CDB35AB26CEE23400D3EF90 /* RepoListViewController.swift in Sources */,
 				5CDB351926CD2CC600D3EF90 /* AppDelegate.swift in Sources */,
 				5CDB357D26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift in Sources */,
 				5CDB358226CD8FE000D3EF90 /* Repo.swift in Sources */,
 				5CDB356B26CD53AB00D3EF90 /* SceneDelegate.swift in Sources */,
 				5CDB357826CD8E7E00D3EF90 /* GithubServiceClient.swift in Sources */,
+				5CDB359C26CEE1FB00D3EF90 /* RepoListProtocols.swift in Sources */,
 				5CDB358726CD97E300D3EF90 /* User.swift in Sources */,
+				5CDB359726CEE1E500D3EF90 /* RepoListWireframe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,7 +553,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -551,7 +571,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.madthijs.octocat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
