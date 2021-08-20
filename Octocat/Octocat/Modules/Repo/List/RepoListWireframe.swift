@@ -14,6 +14,14 @@ class RepoListWireframe: RepoListWireframeProtocol {
 		guard let viewController = navController.topViewController as? RepoListViewController else { fatalError("Invalid View Controller") }
 
 		let wireframe: RepoListWireframeProtocol = RepoListWireframe()
+        let presenter: RepoListPresenterProtocol = RepoListPresenter()
+        let interactor: RepoListInteractorProtocol = RepoListInteractor()
+
+        viewController.presenter = presenter
+        presenter.view = viewController
+        presenter.interactor = interactor
+        interactor.presenter = presenter
+        interactor.serviceClient = GithubServiceClient()
 
 		return navController
 	}

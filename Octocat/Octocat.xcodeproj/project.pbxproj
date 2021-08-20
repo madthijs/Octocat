@@ -27,6 +27,9 @@
 		5CDB35A126CEE20F00D3EF90 /* RepoListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35A026CEE20F00D3EF90 /* RepoListPresenter.swift */; };
 		5CDB35A626CEE21D00D3EF90 /* RepoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35A526CEE21D00D3EF90 /* RepoListInteractor.swift */; };
 		5CDB35AB26CEE23400D3EF90 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */; };
+		A031508626CFFD6A00519F0C /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031508526CFFD6A00519F0C /* RepoListViewModel.swift */; };
+		A031508926D009DB00519F0C /* Differ in Frameworks */ = {isa = PBXBuildFile; productRef = A031508826D009DB00519F0C /* Differ */; };
+		A031508C26D00D4700519F0C /* RepoListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031508B26D00D4700519F0C /* RepoListViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,8 @@
 		5CDB35A026CEE20F00D3EF90 /* RepoListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListPresenter.swift; sourceTree = "<group>"; };
 		5CDB35A526CEE21D00D3EF90 /* RepoListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListInteractor.swift; sourceTree = "<group>"; };
 		5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
+		A031508526CFFD6A00519F0C /* RepoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModel.swift; sourceTree = "<group>"; };
+		A031508B26D00D4700519F0C /* RepoListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CDB355026CD2DDF00D3EF90 /* Alamofire in Frameworks */,
+				A031508926D009DB00519F0C /* Differ in Frameworks */,
 				5CDB355626CD2EDD00D3EF90 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -202,6 +208,8 @@
 		5CDB357526CD8D4800D3EF90 /* List */ = {
 			isa = PBXGroup;
 			children = (
+				A031508A26D00D2A00519F0C /* Views */,
+				A031508426CFFD3A00519F0C /* ViewModels */,
 				5CDB359626CEE1E500D3EF90 /* RepoListWireframe.swift */,
 				5CDB359B26CEE1FB00D3EF90 /* RepoListProtocols.swift */,
 				5CDB35A026CEE20F00D3EF90 /* RepoListPresenter.swift */,
@@ -216,6 +224,22 @@
 			children = (
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		A031508426CFFD3A00519F0C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A031508526CFFD6A00519F0C /* RepoListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A031508A26D00D2A00519F0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A031508B26D00D4700519F0C /* RepoListViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +261,7 @@
 			packageProductDependencies = (
 				5CDB354F26CD2DDF00D3EF90 /* Alamofire */,
 				5CDB355526CD2EDD00D3EF90 /* PromiseKit */,
+				A031508826D009DB00519F0C /* Differ */,
 			);
 			productName = Octocat;
 			productReference = 5CDB351526CD2CC600D3EF90 /* Octocat.app */;
@@ -312,6 +337,7 @@
 			packageReferences = (
 				5CDB354E26CD2DDF00D3EF90 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				5CDB355426CD2EDD00D3EF90 /* XCRemoteSwiftPackageReference "PromiseKit" */,
+				A031508726D009DB00519F0C /* XCRemoteSwiftPackageReference "Differ" */,
 			);
 			productRefGroup = 5CDB351626CD2CC600D3EF90 /* Products */;
 			projectDirPath = "";
@@ -360,12 +386,14 @@
 				5CDB358C26CD9D6B00D3EF90 /* Event.swift in Sources */,
 				5CDB351D26CD2CC600D3EF90 /* ViewController.swift in Sources */,
 				5CDB35A126CEE20F00D3EF90 /* RepoListPresenter.swift in Sources */,
+				A031508C26D00D4700519F0C /* RepoListViewCell.swift in Sources */,
 				5CDB35AB26CEE23400D3EF90 /* RepoListViewController.swift in Sources */,
 				5CDB351926CD2CC600D3EF90 /* AppDelegate.swift in Sources */,
 				5CDB357D26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift in Sources */,
 				5CDB358226CD8FE000D3EF90 /* Repo.swift in Sources */,
 				5CDB356B26CD53AB00D3EF90 /* SceneDelegate.swift in Sources */,
 				5CDB357826CD8E7E00D3EF90 /* GithubServiceClient.swift in Sources */,
+				A031508626CFFD6A00519F0C /* RepoListViewModel.swift in Sources */,
 				5CDB359C26CEE1FB00D3EF90 /* RepoListProtocols.swift in Sources */,
 				5CDB358726CD97E300D3EF90 /* User.swift in Sources */,
 				5CDB359726CEE1E500D3EF90 /* RepoListWireframe.swift in Sources */,
@@ -713,6 +741,14 @@
 				version = 6.15.3;
 			};
 		};
+		A031508726D009DB00519F0C /* XCRemoteSwiftPackageReference "Differ" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tonyarnold/Differ";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.4.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -725,6 +761,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 5CDB355426CD2EDD00D3EF90 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
+		};
+		A031508826D009DB00519F0C /* Differ */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A031508726D009DB00519F0C /* XCRemoteSwiftPackageReference "Differ" */;
+			productName = Differ;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

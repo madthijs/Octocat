@@ -8,9 +8,11 @@
 struct Repo: Decodable {
 	var name: String
 	var description: String
+    var owner: User
 
 	enum CodingKeys: String, CodingKey {
 		case name
 		case description
+        case owner
 	}
 }

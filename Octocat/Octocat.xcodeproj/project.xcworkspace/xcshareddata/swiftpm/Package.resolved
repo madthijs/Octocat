@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "Differ",
+        "repositoryURL": "https://github.com/tonyarnold/Differ",
+        "state": {
+          "branch": null,
+          "revision": "4c3eb4d76ad5c14075829397a5741b0badb08dce",
+          "version": "1.4.5"
+        }
+      },
+      {
         "package": "PromiseKit",
         "repositoryURL": "https://github.com/mxcl/PromiseKit",
         "state": {
