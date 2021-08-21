@@ -7,12 +7,16 @@
 
 struct Repo: Decodable {
 	var name: String
-	var description: String
+	var description: String?
     var owner: User
+    var watchers: Int
+    var forks: Int
 
 	enum CodingKeys: String, CodingKey {
 		case name
 		case description
         case owner
+        case watchers
+        case forks
 	}
 }

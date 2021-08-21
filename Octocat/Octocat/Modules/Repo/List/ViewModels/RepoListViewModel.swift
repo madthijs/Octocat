@@ -7,11 +7,13 @@
 
 import Foundation
 
-struct RepoListViewModel: Hashable {
+struct RepoListViewModel {
     var name: String
-    var description: String
+    var description: String?
     var ownerAvatarURL: URL?
     var ownerLogin: String
+    var watcherCount: Int
+    var forkCount: Int
 
 }
 
@@ -25,7 +27,9 @@ extension RepoListViewModelProtocol {
             name: repo.name,
             description: repo.description,
             ownerAvatarURL: repo.owner.avatarUrl,
-            ownerLogin: repo.owner.login
+            ownerLogin: repo.owner.login,
+            watcherCount: repo.watchers,
+            forkCount: repo.forks
         )
     }
 }

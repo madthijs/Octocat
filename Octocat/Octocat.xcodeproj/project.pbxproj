@@ -28,8 +28,12 @@
 		5CDB35A626CEE21D00D3EF90 /* RepoListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35A526CEE21D00D3EF90 /* RepoListInteractor.swift */; };
 		5CDB35AB26CEE23400D3EF90 /* RepoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */; };
 		A031508626CFFD6A00519F0C /* RepoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031508526CFFD6A00519F0C /* RepoListViewModel.swift */; };
-		A031508926D009DB00519F0C /* Differ in Frameworks */ = {isa = PBXBuildFile; productRef = A031508826D009DB00519F0C /* Differ */; };
 		A031508C26D00D4700519F0C /* RepoListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031508B26D00D4700519F0C /* RepoListViewCell.swift */; };
+		A031508F26D0182E00519F0C /* RepoListHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031508D26D0182E00519F0C /* RepoListHeaderView.swift */; };
+		A031509326D0DFA700519F0C /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031509226D0DFA700519F0C /* UIView+Extension.swift */; };
+		A031509526D0F8E500519F0C /* UIImageView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031509426D0F8E500519F0C /* UIImageView+Promise.swift */; };
+		A031509826D0FE2600519F0C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A031509726D0FE2600519F0C /* AlamofireImage */; };
+		A031509D26D114A300519F0C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031509C26D114A300519F0C /* InfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,6 +80,10 @@
 		5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewController.swift; sourceTree = "<group>"; };
 		A031508526CFFD6A00519F0C /* RepoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewModel.swift; sourceTree = "<group>"; };
 		A031508B26D00D4700519F0C /* RepoListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListViewCell.swift; sourceTree = "<group>"; };
+		A031508D26D0182E00519F0C /* RepoListHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoListHeaderView.swift; sourceTree = "<group>"; };
+		A031509226D0DFA700519F0C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		A031509426D0F8E500519F0C /* UIImageView+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Promise.swift"; sourceTree = "<group>"; };
+		A031509C26D114A300519F0C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +92,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CDB355026CD2DDF00D3EF90 /* Alamofire in Frameworks */,
-				A031508926D009DB00519F0C /* Differ in Frameworks */,
+				A031509826D0FE2600519F0C /* AlamofireImage in Frameworks */,
 				5CDB355626CD2EDD00D3EF90 /* PromiseKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -129,6 +137,8 @@
 		5CDB351726CD2CC600D3EF90 /* Octocat */ = {
 			isa = PBXGroup;
 			children = (
+				A031509926D1118C00519F0C /* Views */,
+				A031509126D0DF9400519F0C /* Extensions */,
 				5CDB357226CD8AE300D3EF90 /* Modules */,
 				5CDB356F26CD8AA300D3EF90 /* Data */,
 				5CDB356A26CD53AB00D3EF90 /* SceneDelegate.swift */,
@@ -238,6 +248,24 @@
 			isa = PBXGroup;
 			children = (
 				A031508B26D00D4700519F0C /* RepoListViewCell.swift */,
+				A031508D26D0182E00519F0C /* RepoListHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A031509126D0DF9400519F0C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A031509226D0DFA700519F0C /* UIView+Extension.swift */,
+				A031509426D0F8E500519F0C /* UIImageView+Promise.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A031509926D1118C00519F0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A031509C26D114A300519F0C /* InfoViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,7 +289,7 @@
 			packageProductDependencies = (
 				5CDB354F26CD2DDF00D3EF90 /* Alamofire */,
 				5CDB355526CD2EDD00D3EF90 /* PromiseKit */,
-				A031508826D009DB00519F0C /* Differ */,
+				A031509726D0FE2600519F0C /* AlamofireImage */,
 			);
 			productName = Octocat;
 			productReference = 5CDB351526CD2CC600D3EF90 /* Octocat.app */;
@@ -337,7 +365,7 @@
 			packageReferences = (
 				5CDB354E26CD2DDF00D3EF90 /* XCRemoteSwiftPackageReference "Alamofire" */,
 				5CDB355426CD2EDD00D3EF90 /* XCRemoteSwiftPackageReference "PromiseKit" */,
-				A031508726D009DB00519F0C /* XCRemoteSwiftPackageReference "Differ" */,
+				A031509626D0FE2600519F0C /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = 5CDB351626CD2CC600D3EF90 /* Products */;
 			projectDirPath = "";
@@ -389,9 +417,13 @@
 				A031508C26D00D4700519F0C /* RepoListViewCell.swift in Sources */,
 				5CDB35AB26CEE23400D3EF90 /* RepoListViewController.swift in Sources */,
 				5CDB351926CD2CC600D3EF90 /* AppDelegate.swift in Sources */,
+				A031509326D0DFA700519F0C /* UIView+Extension.swift in Sources */,
+				A031509526D0F8E500519F0C /* UIImageView+Promise.swift in Sources */,
 				5CDB357D26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift in Sources */,
 				5CDB358226CD8FE000D3EF90 /* Repo.swift in Sources */,
+				A031508F26D0182E00519F0C /* RepoListHeaderView.swift in Sources */,
 				5CDB356B26CD53AB00D3EF90 /* SceneDelegate.swift in Sources */,
+				A031509D26D114A300519F0C /* InfoViewController.swift in Sources */,
 				5CDB357826CD8E7E00D3EF90 /* GithubServiceClient.swift in Sources */,
 				A031508626CFFD6A00519F0C /* RepoListViewModel.swift in Sources */,
 				5CDB359C26CEE1FB00D3EF90 /* RepoListProtocols.swift in Sources */,
@@ -741,12 +773,12 @@
 				version = 6.15.3;
 			};
 		};
-		A031508726D009DB00519F0C /* XCRemoteSwiftPackageReference "Differ" */ = {
+		A031509626D0FE2600519F0C /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/tonyarnold/Differ";
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.4.5;
+				minimumVersion = 4.2.0;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
@@ -762,10 +794,10 @@
 			package = 5CDB355426CD2EDD00D3EF90 /* XCRemoteSwiftPackageReference "PromiseKit" */;
 			productName = PromiseKit;
 		};
-		A031508826D009DB00519F0C /* Differ */ = {
+		A031509726D0FE2600519F0C /* AlamofireImage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = A031508726D009DB00519F0C /* XCRemoteSwiftPackageReference "Differ" */;
-			productName = Differ;
+			package = A031509626D0FE2600519F0C /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

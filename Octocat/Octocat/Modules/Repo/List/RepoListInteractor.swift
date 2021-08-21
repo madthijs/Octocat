@@ -41,4 +41,20 @@ class RepoListInteractor: RepoListInteractorProtocol {
             self.presenter?.didFailToFetchData()
         }
     }
+
+    func fetchData(login: String) {
+        serviceClient?.fetchRepos(withLogin: login)
+            .done { results in
+                if results.isEmpty {
+                    self.presenter?.didFailToAddLogin(login: login)
+                    return
+                }
+
+                self.presenter?.didAddLogin(login: login, repos: results)
+            }
+            .catch { error in
+                print("Error: ", error.localizedDescription)
+                self.presenter?.didFailToAddLogin(login: login)
+            }
+    }
 }
