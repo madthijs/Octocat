@@ -59,13 +59,15 @@ class RepoListPresenter: RepoListPresenterProtocol, RepoListViewModelProtocol {
             self.loadData()
         }))
 
-        if let view = view as? UIViewController {
-            view.present(alert, animated: true)
-        }
+        (view as? UIViewController)?.present(alert, animated: true)
     }
 
     func showAppInfo() {
         wireframe?.showAppInfo()
+    }
+
+    func showRepoDetail(login: String, repoName: String) {
+        wireframe?.showRepoDetail(login: login, repoName: repoName)
     }
 
     func showAddLogin() {
@@ -85,9 +87,7 @@ class RepoListPresenter: RepoListPresenterProtocol, RepoListViewModelProtocol {
             textField.placeholder = "Github username..."
         })
 
-        if let view = view as? UIViewController {
-            view.present(alert, animated: true)
-        }
+        (view as? UIViewController)?.present(alert, animated: true)
     }
 
     func didFailToAddLogin(login: String) {
@@ -95,9 +95,7 @@ class RepoListPresenter: RepoListPresenterProtocol, RepoListViewModelProtocol {
         let alert = UIAlertController(title: "No luck", message: "The user '\(login)' could not be found, or did not have any public repositories.", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Close", style: .default, handler: nil))
 
-        if let view = view as? UIViewController {
-            view.present(alert, animated: true)
-        }
+        (view as? UIViewController)?.present(alert, animated: true)
     }
 
     func didAddLogin(login: String, repos: [Repo]) {
@@ -106,7 +104,7 @@ class RepoListPresenter: RepoListPresenterProtocol, RepoListViewModelProtocol {
     }
 
     private func addLogin(login: String) {
-        interactor?.fetchData(login: login)
+        interactor?.validateLogin(login: login)
     }
 
 }

@@ -42,7 +42,7 @@ class RepoListInteractor: RepoListInteractorProtocol {
         }
     }
 
-    func fetchData(login: String) {
+    func validateLogin(login: String) {
         serviceClient?.fetchRepos(withLogin: login)
             .done { results in
                 if results.isEmpty {

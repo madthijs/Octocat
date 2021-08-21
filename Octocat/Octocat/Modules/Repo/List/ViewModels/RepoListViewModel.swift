@@ -9,7 +9,6 @@ import Foundation
 
 struct RepoListViewModel {
     var name: String
-    var description: String?
     var ownerAvatarURL: URL?
     var ownerLogin: String
     var watcherCount: Int
@@ -25,7 +24,6 @@ extension RepoListViewModelProtocol {
     func mapToViewModel(repo: Repo) -> RepoListViewModel {
         return RepoListViewModel(
             name: repo.name,
-            description: repo.description,
             ownerAvatarURL: repo.owner.avatarUrl,
             ownerLogin: repo.owner.login,
             watcherCount: repo.watchers,

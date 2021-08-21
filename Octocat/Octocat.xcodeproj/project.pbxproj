@@ -34,6 +34,14 @@
 		A031509526D0F8E500519F0C /* UIImageView+Promise.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031509426D0F8E500519F0C /* UIImageView+Promise.swift */; };
 		A031509826D0FE2600519F0C /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A031509726D0FE2600519F0C /* AlamofireImage */; };
 		A031509D26D114A300519F0C /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031509C26D114A300519F0C /* InfoViewController.swift */; };
+		A03150A926D1619700519F0C /* RepoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A031509F26D1619700519F0C /* RepoDetailViewController.swift */; };
+		A03150AA26D1619700519F0C /* RepoDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03150A126D1619700519F0C /* RepoDetailViewModel.swift */; };
+		A03150AB26D1619700519F0C /* RepoDetailEventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03150A226D1619700519F0C /* RepoDetailEventViewModel.swift */; };
+		A03150AC26D1619700519F0C /* RepoDetailWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03150A326D1619700519F0C /* RepoDetailWireframe.swift */; };
+		A03150AD26D1619700519F0C /* RepoDetailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03150A426D1619700519F0C /* RepoDetailInteractor.swift */; };
+		A03150AE26D1619700519F0C /* RepoDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03150A526D1619700519F0C /* RepoDetailPresenter.swift */; };
+		A03150AF26D1619700519F0C /* RepoDetailProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03150A626D1619700519F0C /* RepoDetailProtocols.swift */; };
+		A03150B026D1619700519F0C /* RepoDetailEventViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03150A826D1619700519F0C /* RepoDetailEventViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +92,14 @@
 		A031509226D0DFA700519F0C /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		A031509426D0F8E500519F0C /* UIImageView+Promise.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Promise.swift"; sourceTree = "<group>"; };
 		A031509C26D114A300519F0C /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
+		A031509F26D1619700519F0C /* RepoDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewController.swift; sourceTree = "<group>"; };
+		A03150A126D1619700519F0C /* RepoDetailViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailViewModel.swift; sourceTree = "<group>"; };
+		A03150A226D1619700519F0C /* RepoDetailEventViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailEventViewModel.swift; sourceTree = "<group>"; };
+		A03150A326D1619700519F0C /* RepoDetailWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailWireframe.swift; sourceTree = "<group>"; };
+		A03150A426D1619700519F0C /* RepoDetailInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailInteractor.swift; sourceTree = "<group>"; };
+		A03150A526D1619700519F0C /* RepoDetailPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailPresenter.swift; sourceTree = "<group>"; };
+		A03150A626D1619700519F0C /* RepoDetailProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailProtocols.swift; sourceTree = "<group>"; };
+		A03150A826D1619700519F0C /* RepoDetailEventViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepoDetailEventViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +225,7 @@
 		5CDB357426CD8B9E00D3EF90 /* Repo */ = {
 			isa = PBXGroup;
 			children = (
-				5CDB357626CD8D5200D3EF90 /* Detail */,
+				A031509E26D1619700519F0C /* Detail */,
 				5CDB357526CD8D4800D3EF90 /* List */,
 			);
 			path = Repo;
@@ -227,13 +243,6 @@
 				5CDB35AA26CEE23400D3EF90 /* RepoListViewController.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		5CDB357626CD8D5200D3EF90 /* Detail */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Detail;
 			sourceTree = "<group>";
 		};
 		A031508426CFFD3A00519F0C /* ViewModels */ = {
@@ -266,6 +275,37 @@
 			isa = PBXGroup;
 			children = (
 				A031509C26D114A300519F0C /* InfoViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A031509E26D1619700519F0C /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A031509F26D1619700519F0C /* RepoDetailViewController.swift */,
+				A03150A026D1619700519F0C /* ViewModels */,
+				A03150A326D1619700519F0C /* RepoDetailWireframe.swift */,
+				A03150A426D1619700519F0C /* RepoDetailInteractor.swift */,
+				A03150A526D1619700519F0C /* RepoDetailPresenter.swift */,
+				A03150A626D1619700519F0C /* RepoDetailProtocols.swift */,
+				A03150A726D1619700519F0C /* Views */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		A03150A026D1619700519F0C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A03150A126D1619700519F0C /* RepoDetailViewModel.swift */,
+				A03150A226D1619700519F0C /* RepoDetailEventViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A03150A726D1619700519F0C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A03150A826D1619700519F0C /* RepoDetailEventViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -410,10 +450,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A03150AB26D1619700519F0C /* RepoDetailEventViewModel.swift in Sources */,
+				A03150B026D1619700519F0C /* RepoDetailEventViewCell.swift in Sources */,
 				5CDB35A626CEE21D00D3EF90 /* RepoListInteractor.swift in Sources */,
 				5CDB358C26CD9D6B00D3EF90 /* Event.swift in Sources */,
+				A03150AA26D1619700519F0C /* RepoDetailViewModel.swift in Sources */,
 				5CDB351D26CD2CC600D3EF90 /* ViewController.swift in Sources */,
 				5CDB35A126CEE20F00D3EF90 /* RepoListPresenter.swift in Sources */,
+				A03150AF26D1619700519F0C /* RepoDetailProtocols.swift in Sources */,
 				A031508C26D00D4700519F0C /* RepoListViewCell.swift in Sources */,
 				5CDB35AB26CEE23400D3EF90 /* RepoListViewController.swift in Sources */,
 				5CDB351926CD2CC600D3EF90 /* AppDelegate.swift in Sources */,
@@ -422,11 +466,15 @@
 				5CDB357D26CD8E9500D3EF90 /* GithubServiceClientProtocol.swift in Sources */,
 				5CDB358226CD8FE000D3EF90 /* Repo.swift in Sources */,
 				A031508F26D0182E00519F0C /* RepoListHeaderView.swift in Sources */,
+				A03150AC26D1619700519F0C /* RepoDetailWireframe.swift in Sources */,
 				5CDB356B26CD53AB00D3EF90 /* SceneDelegate.swift in Sources */,
 				A031509D26D114A300519F0C /* InfoViewController.swift in Sources */,
+				A03150AD26D1619700519F0C /* RepoDetailInteractor.swift in Sources */,
 				5CDB357826CD8E7E00D3EF90 /* GithubServiceClient.swift in Sources */,
 				A031508626CFFD6A00519F0C /* RepoListViewModel.swift in Sources */,
+				A03150AE26D1619700519F0C /* RepoDetailPresenter.swift in Sources */,
 				5CDB359C26CEE1FB00D3EF90 /* RepoListProtocols.swift in Sources */,
+				A03150A926D1619700519F0C /* RepoDetailViewController.swift in Sources */,
 				5CDB358726CD97E300D3EF90 /* User.swift in Sources */,
 				5CDB359726CEE1E500D3EF90 /* RepoListWireframe.swift in Sources */,
 			);

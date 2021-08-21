@@ -10,6 +10,7 @@ import UIKit
 protocol RepoListWireframeProtocol: AnyObject {
     var navController: UINavigationController? { get set }
     func showAppInfo()
+    func showRepoDetail(login: String, repoName: String)
 }
 
 // MARK: Presenter -
@@ -23,6 +24,8 @@ protocol RepoListPresenterProtocol: AnyObject {
     func didFetchData(repos: [Repo])
     func didFailToFetchData()
     func showAppInfo()
+    func showRepoDetail(login: String, repoName: String)
+    
     func showAddLogin()
     func didFailToAddLogin(login: String)
     func didAddLogin(login: String, repos: [Repo])
@@ -34,7 +37,7 @@ protocol RepoListInteractorProtocol: AnyObject {
 	var serviceClient: GithubServiceClientProtocol? { get set }
 
     func fetchData(logins: [String])
-    func fetchData(login: String)
+    func validateLogin(login: String)
 }
 
 // MARK: View -

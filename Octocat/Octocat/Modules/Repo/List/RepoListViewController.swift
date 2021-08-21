@@ -114,6 +114,12 @@ extension RepoListViewController {
         assert(false, "Invalid element type")
       }
     }
+
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selected = filteredRepos[indexPath.row]
+        
+        presenter?.showRepoDetail(login: selected.ownerLogin, repoName: selected.name)
+    }
 }
 
 extension RepoListViewController: UICollectionViewDelegateFlowLayout {

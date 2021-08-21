@@ -39,6 +39,12 @@ class RepoListWireframe: RepoListWireframeProtocol {
             viewController.modalPresentationStyle = .pageSheet
             navController?.present(viewController, animated: true)
         }
+    }
 
+    func showRepoDetail(login: String, repoName: String) {
+        if let viewController = RepoDetailWireframe.create(withLogin: login, repoName: repoName) {
+            viewController.modalPresentationStyle = .pageSheet
+            navController?.present(viewController, animated: true)
+        }
     }
 }
