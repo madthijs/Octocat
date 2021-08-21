@@ -1,2 +1,2 @@
 # Octocat
-Technical Assignment ANWB
+Test app (iOS) using PromiseKit, Alamofire and a VIPER architecture.
